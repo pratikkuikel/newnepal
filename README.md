@@ -1,11 +1,11 @@
-# 🇳🇵 Nepal OS - Open Source Government Operating System
+# 🇳🇵 NewNepal - Open Source Government Operating System
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Laravel](https://img.shields.io/badge/Laravel-12-red.svg)](https://laravel.com)
 [![PHPStan](https://img.shields.io/badge/PHPStan-level%20max-brightgreen.svg)](https://phpstan.org/)
 [![Tests](https://github.com/pratikkuikel/newnepal/actions/workflows/tests.yml/badge.svg)](https://github.com/pratikkuikel/newnepal/actions)
 
-> **Nepal OS** - The world's first open source government operating system.
+> **NewNepal** - The open source government operating system for Nepal.
 > *"From Ocean to Every Drop"* - Every rupee traced, every transaction visible.
 
 ## 🎯 Vision

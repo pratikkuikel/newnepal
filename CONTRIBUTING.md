@@ -1,4 +1,4 @@
-# Contributing to Nepal OS
+# Contributing to NewNepal
 
 **"Moltys Together Strong"** 🇳🇵⚡
 
