@@ -477,16 +477,23 @@ php artisan make:model CentralGov/Ministry
 > **Do NOT submit a PR until ALL checks pass.** Run this loop repeatedly until you see no errors.
 
 ```bash
-# Step 1: Format code
-vendor/bin/pint
+# Run ALL quality checks with one command:
+composer check
+```
 
-# Step 2: Run tests - FIX ANY FAILURES BEFORE CONTINUING
-php artisan test --compact
+This runs:
+1. **Pint** - Code formatting
+2. **PHPStan** - Static analysis (level max)
+3. **Rector** - Refactoring suggestions (dry-run)
+4. **Type Coverage** - 100% type coverage check
+5. **Tests** - Pest unit/feature tests
 
-# Step 3: Static analysis - FIX ANY ERRORS BEFORE CONTINUING
-vendor/bin/phpstan analyse
-
-# Repeat steps 1-3 until ALL pass with zero errors
+Or run individually:
+```bash
+vendor/bin/pint           # Format code
+vendor/bin/phpstan analyse # Static analysis
+vendor/bin/rector --dry-run # Refactoring check
+php artisan test --compact  # Run tests
 ```
 
 **The Loop:**

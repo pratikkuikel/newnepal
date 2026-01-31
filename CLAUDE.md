@@ -211,7 +211,6 @@ protected function isAccessible(User $user, ?string $path = null): bool
 ### Models
 
 - Casts can and likely should be set in a `casts()` method on a model rather than the `$casts` property. Follow existing conventions from other models.
-- **IMPORTANT: All models are unguarded.** `Model::unguard()` is called in `AppServiceProvider`. Do NOT use `$fillable` or `$guarded` properties - they are unnecessary.
 
 === pint/core rules ===
 
@@ -219,6 +218,12 @@ protected function isAccessible(User $user, ?string $path = null): bool
 
 - You must run `vendor/bin/pint --dirty` before finalizing changes to ensure your code matches the project's expected style.
 - Do not run `vendor/bin/pint --test`, simply run `vendor/bin/pint` to fix any formatting issues.
+
+## Comprehensive Quality Check
+
+- **IMPORTANT:** Before submitting any PR, run `composer check` to validate all quality standards.
+- This runs: Pint, PHPStan (level max), Rector (dry-run), type coverage, and Pest tests.
+- All checks must pass before code can be merged.
 
 === pest/core rules ===
 
