@@ -68,6 +68,15 @@
             "@lint",
             "@analyse"
         ],
+        "test:type-coverage": "pest --type-coverage --min=100",
+        "test:unit": "pest --parallel",
+        "test:types": "phpstan",
+        "test:all": [
+            "@test:type-coverage",
+            "@test:unit",
+            "@lint",
+            "@analyse"
+        ],
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover --ansi",
