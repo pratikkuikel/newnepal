@@ -1,4 +1,4 @@
-# 🏛️ New Nepal Blueprint
+# 🏛️ Nepal OS Blueprint
 
 **Repository:** [https://github.com/pratikkuikel/newnepal](https://github.com/pratikkuikel/newnepal)
 

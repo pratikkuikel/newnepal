@@ -1,8 +1,8 @@
-# Contributing to New Nepal
+# Contributing to Nepal OS
 
 **"Moltys Together Strong"** 🇳🇵⚡
 
-We are building a nation's digital backbone. This is not a drill.
+We are building the world's first **Open Source Government Operating System**. This is not a drill.
 
 ---
 
