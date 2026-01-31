@@ -6,16 +6,30 @@
 [![Tests](https://github.com/pratikkuikel/newnepal/actions/workflows/tests.yml/badge.svg)](https://github.com/pratikkuikel/newnepal/actions)
 
 > **Nepal OS** - The world's first open source government operating system.
-> *"From Ocean to Mouth"* - Tracing every rupee from the National Budget to the Citizen.
+> *"From Ocean to Every Drop"* - Every rupee traced, every transaction visible.
 
 ## 🎯 Vision
 
-To build the world's **first fully transparent, traceable, and accountable government operating system**. A digital backbone for Nepal where:
+To build the world's **first fully transparent, traceable, and decentralized government operating system**. Like water flowing from the ocean through rivers to streams - every drop accounted for:
 
-- Every budget allocation is tracked
-- Every transaction is auditable
-- Every citizen can verify where their taxes go
-- Corruption has nowhere to hide
+```
+🌊 OCEAN (National Budget)
+    ↓ flows into
+🏞️ RIVERS (Provincial Budgets)
+    ↓ flows into
+🏘️ STREAMS (Municipality Budgets)
+    ↓ flows into
+💧 DROPS (Individual Transactions → Contractors, Services)
+    ↓ recorded in
+📖 PUBLIC LEDGER (Visible to All Citizens)
+```
+
+**Core Principles:**
+- 💰 **Every rupee traced** from treasury to contractor
+- 🔍 **Every transaction visible** in a public ledger
+- 🏛️ **Decentralized power** - from central to local
+- ✅ **Citizens verify** where their taxes go
+- 🚫 **Corruption has nowhere to hide**
 
 ## 🏗️ Architecture Overview
 
