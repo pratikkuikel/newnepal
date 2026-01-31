@@ -1,7 +1,13 @@
 <?php
 
-test('the application returns a successful response', function () {
-    $response = $this->get('/');
+declare(strict_types=1);
 
-    $response->assertStatus(200);
+use function Pest\Laravel\get;
+
+it('returns a successful response for the homepage', function () {
+    get('/')->assertOk();
+});
+
+it('can access the filament admin login page', function () {
+    get('/admin/login')->assertOk();
 });
