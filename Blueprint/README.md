@@ -6,6 +6,17 @@
 To build the world's first **Open-Source Government Operating System**.
 A system where every rupee is traced from the **National Budget (Ocean)** to the **Citizen (Mouth)**, ensuring transparency, traceability, and accountability.
 
+## 🛠️ Tech Stack
+
+We are building on a robust, scalable foundation:
+
+- **Framework:** [Laravel](https://laravel.com) (PHP)
+- **Frontend:** [Livewire](https://livewire.laravel.com) + [Alpine.js](https://alpinejs.dev)
+- **Admin Panel:** [FilamentPHP](https://filamentphp.com)
+- **Styling:** [TailwindCSS](https://tailwindcss.com)
+- **Database:** PostgreSQL / MySQL
+- **Blockchain:** (TBD - for the immutable ledger layer)
+
 ## The "One Piece" Architecture
 This Monorepo contains the technical and governance blueprints for all layers of the New Nepal state.
 
