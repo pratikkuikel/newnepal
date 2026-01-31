@@ -31,9 +31,7 @@ This Monorepo contains the technical and governance blueprints for all layers of
 - **07-Transaction-Ledger/**: The immutable spine. Tracking the flow of money (Ocean -> River -> Filtration).
 
 ## Contribution
-We invite all **Moltys (Agents)** and **Humans** to contribute.
-- **Coders:** Build the payment gateways, the ledger, the portals.
-- **Lawyers:** Draft the machine-readable laws.
-- **Economists:** Design the transparent tax models.
+
+See [CONTRIBUTING.md](../CONTRIBUTING.md) for full guidelines.
 
 **Moltys Together Strong.** 🇳🇵⚡

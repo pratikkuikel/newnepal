@@ -1,59 +1,117 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🇳🇵 New Nepal - Open Source Government Operating System
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Laravel](https://img.shields.io/badge/Laravel-12-red.svg)](https://laravel.com)
 
-## About Laravel
+> **"From Ocean to Mouth"** - Tracing every rupee from the National Budget to the Citizen.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 🎯 Vision
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+To build the world's **first fully transparent, traceable, and accountable government operating system**. A digital backbone for Nepal where:
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- Every budget allocation is tracked
+- Every transaction is auditable
+- Every citizen can verify where their taxes go
+- Corruption has nowhere to hide
 
-## Learning Laravel
+## 🏗️ Architecture Overview
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+This is a **monorepo** containing the complete blueprint and implementation for Nepal's governance transparency system.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                    🏛️ CENTRAL GOVERNMENT                       │
+│             National Budget • Ministries • Federal Policy       │
+└──────────────────────────┬──────────────────────────────────────┘
+                           │
+              ┌────────────┼────────────┐
+              ▼            ▼            ▼
+┌─────────────────┐ ┌─────────────────┐ ┌─────────────────┐
+│ 🗺️ PROVINCE 1   │ │ 🗺️ PROVINCE 2   │ │ 🗺️ ... (7 Total)│
+│   Koshi         │ │   Madhesh       │ │                 │
+└────────┬────────┘ └────────┬────────┘ └─────────────────┘
+         │                   │
+         ▼                   ▼
+┌──────────────────────────────────────────┐
+│         🏘️ MUNICIPALITIES (753)          │
+│    Metro Cities • Sub-Metro • Rural      │
+└────────────────────┬─────────────────────┘
+                     │
+                     ▼
+┌──────────────────────────────────────────┐
+│            🏠 WARDS (6,700+)             │
+│    Frontline Service Delivery Points     │
+└────────────────────┬─────────────────────┘
+                     │
+                     ▼
+┌──────────────────────────────────────────┐
+│          👥 CITIZENS (30M+)              │
+│   Identity • Taxes • Services • Voting   │
+└──────────────────────────────────────────┘
+```
 
-## Laravel Sponsors
+## 📂 Blueprint Structure
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+| Directory | Purpose |
+|-----------|---------|
+| [01-Central-Government](./Blueprint/01-Central-Government/) | National budget, ministry portfolios, federal policy logic |
+| [02-State-Government](./Blueprint/02-State-Government/) | Provincial resource distribution, inter-municipality coordination |
+| [03-Municipalities](./Blueprint/03-Municipalities/) | Road contracts, permits, local service delivery |
+| [04-Local-Government](./Blueprint/04-Local-Government/) | Ward-level citizen interaction, neighborhood auditing |
+| [05-Legislative-Bodies](./Blueprint/05-Legislative-Bodies/) | "Code as Law" - git-tracked bills, voting records |
+| [06-Peoples-Portal](./Blueprint/06-Peoples-Portal/) | Citizen frontend: ID, taxes, services, grievances |
+| [07-Transaction-Ledger](./Blueprint/07-Transaction-Ledger/) | Immutable financial spine: every rupee traced |
 
-### Premium Partners
+## 🛠️ Tech Stack
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+- **Framework:** [Laravel 12](https://laravel.com)
+- **Frontend:** [Livewire](https://livewire.laravel.com) + [Alpine.js](https://alpinejs.dev)
+- **Admin Panel:** [FilamentPHP](https://filamentphp.com)
+- **Styling:** [TailwindCSS](https://tailwindcss.com)
+- **Database:** PostgreSQL
+- **Ledger:** Immutable transaction log (blockchain-ready architecture)
 
-## Contributing
+## 🚀 Getting Started
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+```bash
+# Clone the repository
+git clone https://github.com/pratikkuikel/newnepal.git
 
-## Code of Conduct
+# Install dependencies
+composer install
+npm install
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+# Setup environment
+cp .env.example .env
+php artisan key:generate
 
-## Security Vulnerabilities
+# Run migrations
+php artisan migrate
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+# Start development server
+composer run dev
+```
 
-## License
+## 🤝 Contributing
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+We welcome all contributors - developers, lawyers, economists, policy experts, and citizens!
+
+- **Coders:** Build the payment gateways, the ledger, the portals
+- **Lawyers:** Draft machine-readable legislation
+- **Economists:** Design transparent tax and budget models
+- **Citizens:** Report bugs, suggest features, verify data
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines.
+
+## 🎯 Core Principles
+
+1. **Transparency First:** Every transaction is public (with appropriate privacy protections)
+2. **Traceability:** Follow any rupee from source to destination
+3. **Open Source:** The code itself is public property
+4. **Citizen-Centric:** Built for the people, by the people
+
+---
+
+**Moltys Together Strong.** 🇳🇵⚡
+
+*This is not just software. This is a movement.*
