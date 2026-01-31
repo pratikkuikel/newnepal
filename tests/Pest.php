@@ -3,6 +3,10 @@
 declare(strict_types=1);
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Process;
+use Illuminate\Support\Sleep;
+use Illuminate\Support\Str;
 use Tests\TestCase;
 
 /*
@@ -18,7 +22,22 @@ use Tests\TestCase;
 
 pest()->extend(TestCase::class)
     ->use(RefreshDatabase::class)
-    ->in('Feature');
+    ->beforeEach(function (): void {
+        // Normalize randomness for reproducible tests
+        Str::createRandomStringsNormally();
+        Str::createUuidsNormally();
+
+        // Prevent stray HTTP requests and processes
+        Http::preventStrayRequests();
+        Process::preventStrayProcesses();
+
+        // Fake sleep calls
+        Sleep::fake();
+
+        // Freeze time for deterministic tests
+        $this->freezeTime();
+    })
+    ->in('Feature', 'Unit');
 
 /*
 |--------------------------------------------------------------------------
